@@ -1,0 +1,6 @@
+CREATE TABLE UnitTypes (
+UnitTypeID integer NOT NULL GENERATED ALWAYS AS IDENTITY,
+UnitType text NOT NULL,
+PRIMARY KEY (UnitTypeID),
+UNIQUE (UnitType)
+);
