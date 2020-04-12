@@ -21,6 +21,12 @@ SET search_path TO ccms, public;
 \ir FUNCTIONS/new_unit.sql
 \ir FUNCTIONS/unit.sql
 
-\ir TABLES/resourcetypes.sql
-\ir FUNCTIONS/new_resourcetype.sql
-\ir FUNCTIONS/resourcetype.sql
+\ir TABLES/doctypes.sql
+\ir FUNCTIONS/new_doctype.sql
+\ir FUNCTIONS/doctype.sql
+
+\ir TABLES/docs.sql
+\ir FUNCTIONS/new_doc.sql
+
+\ir TABLES/beds.sql
+\ir FUNCTIONS/new_bed.sql

@@ -3,5 +3,5 @@ RETURNS integer
 LANGUAGE sql
 SET search_path TO ccms, public
 AS $$
-SELECT HospitalID FROM Hospitals WHERE HospitalCode = HospitalCode
+SELECT HospitalID FROM Hospitals WHERE Hospitals.HospitalCode = Hospital.HospitalCode
 $$;

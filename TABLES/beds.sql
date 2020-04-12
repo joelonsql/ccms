@@ -1,0 +1,7 @@
+CREATE TABLE Beds (
+BedID integer NOT NULL GENERATED ALWAYS AS IDENTITY,
+BedCode text NOT NULL,
+UnitID integer NOT NULL REFERENCES Units,
+PRIMARY KEY (BedID),
+UNIQUE (UnitID, BedCode)
+);
