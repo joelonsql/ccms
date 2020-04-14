@@ -1,7 +1,7 @@
-CREATE FUNCTION New_Doc(DocTypeCode text, HospitalCode text, DocName text)
+CREATE FUNCTION New_Doc(DocTypeCode text, HospitalCode text, DocName text, UnitType text)
 RETURNS integer
 LANGUAGE sql
 SET search_path TO ccms, public
 AS $$
-INSERT INTO Docs (DocTypeID, HospitalID, DocName) VALUES (DocType(DocTypeCode), Hospital(HospitalCode), DocName) RETURNING DocID
+INSERT INTO Docs (DocTypeID, HospitalID, DocName, UnitTypeID) VALUES (DocType(DocTypeCode), Hospital(HospitalCode), DocName, UnitType(UnitType)) RETURNING DocID
 $$;

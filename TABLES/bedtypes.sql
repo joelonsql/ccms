@@ -1,0 +1,6 @@
+CREATE TABLE BedTypes (
+BedTypeID integer NOT NULL GENERATED ALWAYS AS IDENTITY,
+BedType text NOT NULL,
+PRIMARY KEY (BedTypeID),
+UNIQUE (BedType)
+);
