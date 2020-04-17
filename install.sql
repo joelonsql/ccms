@@ -30,6 +30,8 @@ SET search_path TO ccms, public;
 \ir FUNCTIONS/doc.sql
 
 \ir TABLES/bedtypes.sql
+\ir FUNCTIONS/new_bedtype.sql
+\ir FUNCTIONS/bedtype.sql
 
 \ir TABLES/beds.sql
 \ir FUNCTIONS/new_bed.sql
